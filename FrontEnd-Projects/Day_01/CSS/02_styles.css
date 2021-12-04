@@ -1,0 +1,19 @@
+.insideDiv{
+    color: red;
+}
+
+#para1, #para3, #para2 {
+    color: blue;
+}
+
+.class_para{
+    color: crimson;
+}
+
+#id_para{
+    color: rebeccapurple;
+}
+
+p{
+    background-color: lightgray; 
+}
