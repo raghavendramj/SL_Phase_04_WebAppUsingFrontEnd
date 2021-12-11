@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>CSS Grid </title>
+    <style>
+      /* Grid Children */
+      .container > div { 
+        background-color: rgb(255, 255, 255, .8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        text-align: center;
+        height: 10vh;
+        font-size: 30px;        
+      }
+
+      /* Grid Parent */
+      .container {
+        background-color: rgb(33, 150, 243);
+        border: thin solid black; 
+        padding: 10px; 
+        box-sizing: border-box;
+        grid-gap: 5px;
+      }
+
+      .container{
+          display: grid;
+      }
+/* 
+      #box1{
+          grid-column: 1/5;
+      }
+
+      #box2{
+          grid-row: 2/5;
+      }
+
+      #box8{
+          grid-row: 3/5;
+      } */
+
+      #box3{
+          grid-area: 1/1/3/5;
+      }
+
+     
+    </style>
+  </head>
+
+  <body>
+    <h4 style="text-indent: 10px">Flex Box Children Exmaple</h4>
+    <div class="container">
+      <div id="box1">1</div>
+      <div id="box2">2</div>
+      <div id="box3">3</div>
+      <div id="box4">4</div>
+      <div id="box5">5</div>
+      <div id="box6">6</div>
+      <div id="box7">7</div>
+      <div id="box8">8</div>
+      <div id="box9">9</div>
+      <div id="box10">10</div>
+      <div id="box11">11</div>
+      <div id="box12">12</div>
+      <div id="box13">13</div>
+      <div id="box14">14</div>
+      <div id="box15">15</div>
+      <div id="box16">16</div>
+    </div>
+  </body>
+</html>
