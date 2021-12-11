@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Units of CSS - EM and REM</title>
+    <style>
+      body {
+        border: thin solid red;
+        padding: 20px;
+        font-size: 20px;
+        height: 40vh;
+      }
+      section {
+        border: thin solid blue;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      div {
+        border: thin solid black;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        /* 1em = 14px */
+        font-size: 2em;
+      }
+
+      p {
+        border: thin solid red;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        /* 1rem = 20px => root -> body */
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    This is my body element
+    <section>
+      This is my section element
+      <div>
+        Div:- 1em = section's 14px
+        <p>
+            Para:- 1rem = root/body's 20px
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

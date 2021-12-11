@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Text Decoration</title>
+    <style>
+      p {
+        border: thin solid brown;
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 30px;
+      }
+
+      #heading {
+        text-decoration-line: none;
+        text-decoration-color: purple;
+      }
+
+      #lineThrough{
+        text-decoration-line: line-through;
+        text-decoration-color: red;
+      }
+
+      #underline{
+        text-decoration-line: underline;
+        text-decoration-color: purple;
+      }
+
+      #overline{
+        text-decoration-line: overline;
+        text-decoration-color: blue;
+      }
+
+      #lineThroughWavy{
+        text-decoration-line: line-through;
+        text-decoration-color: red;
+        text-decoration-style: wavy;
+      }
+
+      #underLinedotted{
+        text-decoration-line: underline;
+        text-decoration-color: red;
+        text-decoration-style: dotted;
+      }
+
+      #doubleunderline{
+        text-decoration-line: underline;
+        text-decoration-color: red;
+        text-decoration-style: double;
+      } 
+
+      #shortHand{
+          text-decoration: overline blue double;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">The Text is decorated</h1>
+    <p id="lineThrough">Decorated with Line-through</p>
+    <p id="underline">Decorated with underline</p>
+    <p id="overline">Decorated with overline</p>
+    <p id="lineThroughWavy">Decorated with lineThroughWavy</p>
+    <p id="underLinedotted">Decorated with underLinedotted</p>
+    <p id="doubleunderline">Decorated with doubleunderline</p>
+    <p id="shortHand">Decorated with shorthand : overline blue double</p>
+   </body>
+</html>
