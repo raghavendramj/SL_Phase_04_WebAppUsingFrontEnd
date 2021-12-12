@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Intro to JavaScript</title>
+    <script>
+      function displayMessage() {
+        console.log("Display function is called !");
+        alert("Display function is called !");
+
+        var span = document.getElementById("mySpan");
+        span.innerHTML = "Display function was called";
+
+        this.get("https://jsonplaceholder.typicode.com/todos/2").success(
+          function (response) {
+            var span = document.getElementById("mySpan");
+            span.innerHTML = response;
+          }
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <span id="mySpan"></span>
+      <button onclick="displayMessage()">Load Data</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+Value Types:- Copied By Value
+
+Number
+String
+Boolean
+Symbol
+undefined
+null
+
+
+Refernce Types:- Copied by reference
+
+Object
+Function
+Array
+
+
