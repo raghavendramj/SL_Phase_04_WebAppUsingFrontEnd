@@ -1,0 +1,70 @@
+node -v
+	-> some version
+	if no
+		-> download node from online -> installer and install 
+	yes
+		-> 
+	npm install -g npm
+	npm install -g @angular/cli@latest
+	
+	ng --version
+	https://code.visualstudio.com/
+	
+	mkdir AngularApplications
+	cd AngularApplications	
+	ng new FirstAngularApp	
+	cd FirstAngularApp
+	code . -> VS Code
+	open terminal
+	npm start
+	http://localhost:4200/
+	
+	
+	If project is downloaded from my repo
+		-> run this command :- npm install
+	
+	add the new nested component
+		ng generate component components/home
+		
+	adding bootstrap to angular
+		->	npm install bootstrap
+		-> 	npm install jquery
+		-> 	add the line to styles.css => @import "~bootstrap/dist/css/bootstrap.css"
+		
+		
+		
+Data Interactions:
+	Bindings:
+
+	SOURCE -> Component TS File
+	Template -> HTML File
+
+	One Way binding
+		Source to View / Component to template
+		Property Binding
+			-> Component -> isDisabled = true 
+				-> Template -> <input [disabled] = "isDisabled" />
+		Source to View / Component to template
+		Interpolation
+			-> Component -> username 
+				-> Template -> <p>Entered username : {{username}} </p>
+				
+		View  to Source / Template to Component
+		Event Binding
+			-> Template -> <button (click)="toggleInputField()">Toggle Input </button>
+				-> Component -> toggleInputField(){ isDisabled = !isDisabled }
+				
+		Two way Binding
+			Property Binding -> [] + Event Binding () => [(ngModel)] ="username"
+			
+			1. Source to View / Component to template
+			2. View  to Source / Template to Component
+		
+		Source to View / Component to template
+		.setBlue{
+			background-color: blue;
+		}
+		Style Binding
+			-> Component -> backgroundClr -> setBlue
+					->Template -> <div  [class]="backgroundClr">
+		

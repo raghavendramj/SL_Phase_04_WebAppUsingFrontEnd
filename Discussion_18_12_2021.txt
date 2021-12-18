@@ -1,0 +1,9 @@
+Session Plan
+
+2 Hours
+	JS -> ES6 Features
+	TypeScript -> Basics
+
+6 Hours 
+	Angular
+	
