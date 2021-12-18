@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax Example</title>
+    <script>
+      function loadFile() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = () => {
+          if (xhttp.readyState === 4 && xhttp.status === 200) {
+            let itemsResp = JSON.parse(xhttp.response).items;
+            let saleInfo = itemsResp.map((eachItem) => eachItem.saleInfo);
+            document.getElementById("demo").innerHTML =
+              JSON.stringify(saleInfo);
+            console.log(xhttp.response);
+          }
+        };
+
+        xhttp.open(
+          "GET",
+          "https://www.googleapis.com/books/v1/volumes?q=KristiGaines"
+        );
+        xhttp.send();
+      }
+    </script>
+  </head>
+  <body>
+    <div id="demo">
+      <h2>The XML HTTP Request</h2>
+      <button onclick="loadFile()">Change Content</button>
+    </div>
+  </body>
+</html>
